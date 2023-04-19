@@ -1,12 +1,32 @@
 import LayoutWithMenu from "<import>/components/LayoutWithMenu";
-
+import Search from "<import>/components/Search";
+import { useRef } from "react";
+import { useRouter } from "next/router";
+import { handler } from "../api/index";
+import NewsList from "<import>/components/NewsList";
 const KEY = process.env.API_KEY;
 
 export default function News({ results }: any) {
+  const router = useRouter();
+  const topic: any = useRef();
+  const handleSubmit = (e: any) => {
+    e.preventDefault();
+    const topicValue = topic.current.value;
+    router.push(`/news/${topicValue}`);
+    topic.current.value = "";
+  };
   return (
     <LayoutWithMenu>
-      <h1>Top Stories</h1>
-      <ul className="grid grid-cols-4 gap-4">
+      <Search
+        onSubmitHandler={handleSubmit}
+        reference={topic}
+        placeholder="Search topic"
+      />
+      <h1 className="mt-4 mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white text-center">
+        Top Stories
+      </h1>
+      <NewsList resource={results} />
+      {/* <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {results.map((result: any) => {
           return (
             <li
@@ -16,38 +36,28 @@ export default function News({ results }: any) {
               <a href={result.url} target="_blank" rel="noopener norefferer">
                 {result.title}
               </a>
-              {/* <Image
-                src={result.multimedia[0].url}
-                alt={result.multimedia[0].caption}
-                width={500}
-                height={500}
-              /> */}
               <img
                 src={result.multimedia[0].url}
                 alt={result.multimedia[0].caption}
                 width={500}
                 height={500}
               />
-
-              <br />
-              <br />
             </li>
           );
         })}
-      </ul>
+      </ul> */}
     </LayoutWithMenu>
   );
 }
 
 export async function getStaticProps() {
-  const URL = `https://api.nytimes.com/svc/topstories/v2/home.json?api-key=${KEY}`;
-  const response = await fetch(URL);
-  const data = await response.json();
-  console.log(data.results);
+  const results = await handler(
+    `https://api.nytimes.com/svc/topstories/v2/home.json?api-key=${KEY}`
+  );
 
   return {
     props: {
-      results: data.results,
+      results,
     },
   };
 }
