@@ -3,7 +3,7 @@ import contacts from "../api/contacts";
 import LayoutWithMenu from "<import>/components/LayoutWithMenu";
 export default function Contact() {
   const router = useRouter();
-  const id = router.query.id;
+  const contactId = router.query.contactId;
 
   const contact:
     | {
@@ -11,17 +11,20 @@ export default function Contact() {
         name: string;
         country: string;
       }
-    | any = contacts.find((contact) => contact.id === id);
+    | any = contacts.find((contact) => contact.id === contactId);
+
+  const [first, last] = contact.name.split(" ");
 
   return (
-    <>
-      <LayoutWithMenu />
+    <LayoutWithMenu>
       <div>
         <h3>
-          <strong>{contact.name}</strong>
+          <strong>
+            {last.toUpperCase()}, {first}
+          </strong>
         </h3>
         <p>{contact.country}</p>
       </div>
-    </>
+    </LayoutWithMenu>
   );
 }
