@@ -5,6 +5,7 @@ import { useRef } from "react";
 import { useRouter } from "next/router";
 import { handler } from "../api/index";
 import NewsList from "<import>/components/NewsList";
+import SectionsList from "<import>/components/SectionsList";
 const KEY = process.env.API_KEY;
 
 export default function News({ results, title }: any) {
@@ -16,6 +17,8 @@ export default function News({ results, title }: any) {
     router.push(`/news/search/${topicValue}`);
     topic.current.value = "";
   };
+
+  console.log(results);
   return (
     <LayoutWithMenu>
       <Head>
@@ -28,10 +31,15 @@ export default function News({ results, title }: any) {
         reference={topic}
         placeholder="Search topic"
       />
+
       <h1 className="mt-4 mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white text-center">
         {title}
       </h1>
-      <NewsList resource={results} />
+      {Object.keys(results[0]).length === 2 ? (
+        <SectionsList resource={results} />
+      ) : (
+        <NewsList resource={results} />
+      )}
     </LayoutWithMenu>
   );
 }
@@ -41,6 +49,7 @@ export async function getStaticPaths() {
     paths: [
       { params: { path: "top-stories" } },
       { params: { path: "popular" } },
+      { params: { path: "sections" } },
     ],
     fallback: false, // can also be true or 'blocking'
   };
@@ -49,6 +58,7 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }: any) {
   const top_stories_url = `https://api.nytimes.com/svc/topstories/v2/home.json?api-key=${KEY}`;
   const popular_url = `https://api.nytimes.com/svc/mostpopular/v2/viewed/1.json?api-key=${KEY}`;
+  const sections_url = `https://api.nytimes.com/svc/news/v3/content/section-list.json?api-key=${KEY}`;
 
   switch (params.path) {
     case "top-stories":
@@ -63,6 +73,13 @@ export async function getStaticProps({ params }: any) {
         props: {
           results: await handler(popular_url),
           title: "Popular",
+        },
+      };
+    case "sections":
+      return {
+        props: {
+          results: await handler(sections_url),
+          title: "Sections",
         },
       };
     default:

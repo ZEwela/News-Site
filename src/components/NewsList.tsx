@@ -1,5 +1,4 @@
 export default function NewsList({ resource }: any) {
-  console.log(resource);
   return (
     <>
       <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
