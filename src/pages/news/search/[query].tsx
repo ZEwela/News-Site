@@ -1,5 +1,5 @@
 import LayoutWithMenu from "<import>/components/LayoutWithMenu";
-import { search } from "../api/index";
+import { search } from "../../api/index";
 import NewsList from "<import>/components/NewsList";
 
 const KEY = process.env.API_KEY;

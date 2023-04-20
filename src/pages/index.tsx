@@ -5,6 +5,18 @@ import Link from "next/link";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
+  const links = [
+    {
+      title: "Top Stories",
+      desc: "Read articles currently on the homepage of the New York Times",
+      path: "/top-stories",
+    },
+    {
+      title: "Popular",
+      desc: "Read the most popular articles  on the New York Times",
+      path: "/popular",
+    },
+  ];
   return (
     <main className="flex min-h-screen flex-col items-center  p-24">
       <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
@@ -38,22 +50,30 @@ export default function Home() {
           </span>
         </div>
       </Link>
-      <Link href="/news">
-        <div className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">
-          Top News{" "}
-          <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-            -&gt;
-          </span>
-        </div>
-      </Link>
-      <Link href="/news">
+      {links.map((link) => {
+        return (
+          <>
+            <Link key={link.path} href={`/news${link.path}`}>
+              <div className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 text-center">
+                <strong>{link.title}</strong>{" "}
+                <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+                  -&gt;
+                </span>
+                <p>{link.desc}</p>
+              </div>
+            </Link>
+          </>
+        );
+      })}
+
+      {/* <Link href="/news">
         <div className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">
           Most Popular News{" "}
           <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
             -&gt;
           </span>
         </div>
-      </Link>
+      </Link> */}
     </main>
   );
 }
