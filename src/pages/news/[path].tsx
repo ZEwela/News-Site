@@ -49,7 +49,6 @@ export async function getStaticPaths() {
     paths: [
       { params: { path: "top-stories" } },
       { params: { path: "popular" } },
-      { params: { path: "sections" } },
     ],
     fallback: false, // can also be true or 'blocking'
   };
@@ -58,7 +57,6 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }: any) {
   const top_stories_url = `https://api.nytimes.com/svc/topstories/v2/home.json?api-key=${KEY}`;
   const popular_url = `https://api.nytimes.com/svc/mostpopular/v2/viewed/1.json?api-key=${KEY}`;
-  const sections_url = `https://api.nytimes.com/svc/news/v3/content/section-list.json?api-key=${KEY}`;
 
   switch (params.path) {
     case "top-stories":
@@ -73,13 +71,6 @@ export async function getStaticProps({ params }: any) {
         props: {
           results: await handler(popular_url),
           title: "Popular",
-        },
-      };
-    case "sections":
-      return {
-        props: {
-          results: await handler(sections_url),
-          title: "Sections",
         },
       };
     default:
