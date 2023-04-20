@@ -5,7 +5,7 @@ type Props = {
   children: ReactNode;
 };
 
-export default function LayoutWithMenu({ children }: Props) {
+export default function LayoutWithMenu({ children }: Props): JSX.Element {
   return (
     <>
       <Menu />
