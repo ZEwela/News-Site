@@ -11,7 +11,8 @@ export default function SectionsList({ resource }: any) {
         {resource.map((result: any) => {
           if (
             result.section === "admin" ||
-            result.section === "crosswords & games"
+            result.section === "crosswords & games" ||
+            result.section === "home & garden"
           )
             return;
           return (
