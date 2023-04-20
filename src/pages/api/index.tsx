@@ -1,16 +1,24 @@
-export async function handler(url: any) {
+export interface Doc {
+  title: string;
+  url: string;
+  uri: string;
+  multimediaURL?: string;
+  multimediaCaption?: string;
+}
+
+export async function handler(url: string): Promise<any[]> {
   const response = await fetch(url);
   const data = await response.json();
   const results = data.results;
   return results;
 }
 
-export async function search(url: string) {
+export async function search(url: string): Promise<any[]> {
   const response = await fetch(url);
   const data = await response.json();
   const docs = data.response.docs ?? [];
 
-  const results = docs.map((doc: any) => {
+  const results: Doc[] = docs.map((doc: any) => {
     return {
       title: doc?.headline?.main,
       url: doc.web_url,
@@ -24,12 +32,12 @@ export async function search(url: string) {
   return results;
 }
 
-export async function section(url: string) {
+export async function section(url: string): Promise<any[]> {
   const response = await fetch(url);
   const data = await response.json();
   const docs = data.results;
 
-  const results = docs.map((doc: any) => {
+  const results: Doc[] = docs.map((doc: any) => {
     return {
       title: doc?.title,
       url: doc.url,

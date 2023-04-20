@@ -1,6 +1,11 @@
 import Menu from "./Menu";
+import React, { ReactNode } from "react";
 
-export default function LayoutWithMenu({ children }: any) {
+type Props = {
+  children: ReactNode;
+};
+
+export default function LayoutWithMenu({ children }: Props) {
   return (
     <>
       <Menu />

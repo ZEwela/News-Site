@@ -4,8 +4,14 @@ import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Home() {
-  const links = [
+export default function Home(): JSX.Element {
+  interface LinksELement {
+    title: string;
+    desc: string;
+    path: string;
+  }
+
+  const links: LinksELement[] = [
     {
       title: "Top Stories",
       desc: "Read articles currently on the homepage of the New York Times",

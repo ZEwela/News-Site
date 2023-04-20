@@ -1,14 +1,18 @@
 import { useRouter } from "next/router";
+import { Section } from "../pages/news/sections/index";
+interface Props {
+  resource: Section[];
+}
 
-export default function SectionsList({ resource }: any) {
+export default function SectionsList({ resource }: Props): JSX.Element {
   const router = useRouter();
-  const onClickHandler = (section: string) => {
+  const onClickHandler = (section: string): void => {
     router.push(`/news/sections/${section}`);
   };
   return (
     <>
       <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        {resource.map((result: any) => {
+        {resource.map((result: Section) => {
           if (
             result.section === "admin" ||
             result.section === "crosswords & games" ||

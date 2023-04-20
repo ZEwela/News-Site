@@ -1,8 +1,16 @@
+import React, { FormEvent, RefObject } from "react";
+
+interface SearchProps {
+  onSubmitHandler: (event: FormEvent<HTMLFormElement>) => void;
+  reference: RefObject<HTMLInputElement>;
+  placeholder: string;
+}
+
 export default function Search({
   onSubmitHandler,
   reference,
   placeholder,
-}: any) {
+}: SearchProps) {
   return (
     <>
       <form onSubmit={onSubmitHandler} className="mt-4">

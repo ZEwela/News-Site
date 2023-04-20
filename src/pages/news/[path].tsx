@@ -3,22 +3,25 @@ import Search from "<import>/components/Search";
 import Head from "next/head";
 import { useRef } from "react";
 import { useRouter } from "next/router";
-import { handler } from "../api/index";
+import { Doc, handler } from "../api/index";
 import NewsList from "<import>/components/NewsList";
-import SectionsList from "<import>/components/SectionsList";
-const KEY = process.env.API_KEY;
+const KEY = process.env.API_KEY as string;
 
-export default function News({ results, title }: any) {
+type NewsProps = {
+  results: Doc[];
+  title: string;
+};
+
+export default function News({ results, title }: NewsProps) {
   const router = useRouter();
-  const topic: any = useRef();
-  const handleSubmit = (e: any) => {
+  const topic = useRef<HTMLInputElement>(null!);
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const topicValue = topic.current.value;
     router.push(`/news/search/${topicValue}`);
     topic.current.value = "";
   };
 
-  console.log(results);
   return (
     <LayoutWithMenu>
       <Head>
@@ -35,11 +38,8 @@ export default function News({ results, title }: any) {
       <h1 className="mt-4 mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white text-center">
         {title}
       </h1>
-      {Object.keys(results[0]).length === 2 ? (
-        <SectionsList resource={results} />
-      ) : (
-        <NewsList resource={results} />
-      )}
+
+      <NewsList resource={results} />
     </LayoutWithMenu>
   );
 }

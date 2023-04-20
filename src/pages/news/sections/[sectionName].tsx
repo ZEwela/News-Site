@@ -1,8 +1,15 @@
 import LayoutWithMenu from "<import>/components/LayoutWithMenu";
-import { section } from "../../api/index";
+import { Doc, section } from "../../api/index";
 import NewsList from "<import>/components/NewsList";
 
-export default function News({ results, query }: any) {
+interface SectionArticles {
+  results: Doc[];
+  query: string;
+}
+export default function SectionArticles({
+  results,
+  query,
+}: SectionArticles): JSX.Element {
   return (
     <LayoutWithMenu>
       <h1 className="mt-4 mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white text-center">

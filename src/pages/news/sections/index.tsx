@@ -4,7 +4,17 @@ import { handler } from "<import>/pages/api";
 import SectionsList from "<import>/components/SectionsList";
 const KEY = process.env.API_KEY;
 
-export default function Sections({ results, title }: any) {
+export interface Section {
+  section: string;
+  display_name: string;
+}
+
+type SectionsProps = {
+  results: Section[];
+  title: string;
+};
+
+export default function Sections({ results, title }: SectionsProps) {
   return (
     <LayoutWithMenu>
       <Head>
@@ -20,7 +30,7 @@ export default function Sections({ results, title }: any) {
   );
 }
 
-export async function getStaticProps() {
+export async function getStaticProps(): Promise<{ props: SectionsProps }> {
   const sections_url = `https://api.nytimes.com/svc/news/v3/content/section-list.json?api-key=${KEY}`;
 
   return {
