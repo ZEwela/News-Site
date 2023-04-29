@@ -31,7 +31,7 @@ export default function NotFound() {
                       <circle
                         fill="none"
                         stroke="#0E0620"
-                        stroke-width="3"
+                        strokeWidth="3"
                         strokeMiterlimit="10"
                         cx="572.859"
                         cy="108.803"
@@ -42,7 +42,7 @@ export default function NotFound() {
                         id="craterBig"
                         fill="none"
                         stroke="#0E0620"
-                        stroke-width="3"
+                        strokeWidth="3"
                         strokeMiterlimit="10"
                         cx="548.891"
                         cy="62.319"
@@ -53,7 +53,7 @@ export default function NotFound() {
                         id="craterSmall"
                         fill="none"
                         stroke="#0E0620"
-                        stroke-width="3"
+                        strokeWidth="3"
                         strokeMiterlimit="10"
                         cx="591.743"
                         cy="158.918"
@@ -63,7 +63,7 @@ export default function NotFound() {
                         id="ring"
                         fill="none"
                         stroke="#0E0620"
-                        stroke-width="3"
+                        strokeWidth="3"
                         strokeLinecap="round"
                         strokeMiterlimit="10"
                         d="
@@ -76,7 +76,7 @@ export default function NotFound() {
                         opacity="0.5"
                         fill="none"
                         stroke="#0E0620"
-                        stroke-width="3"
+                        strokeWidth="3"
                         strokeLinecap="round"
                         strokeMiterlimit="10"
                         d="
@@ -89,7 +89,7 @@ export default function NotFound() {
                           <line
                             fill="none"
                             stroke="#0E0620"
-                            stroke-width="3"
+                            strokeWidth="3"
                             strokeLinecap="round"
                             strokeMiterlimit="10"
                             x1="518.07"
@@ -101,7 +101,7 @@ export default function NotFound() {
                           <line
                             fill="none"
                             stroke="#0E0620"
-                            stroke-width="3"
+                            strokeWidth="3"
                             strokeLinecap="round"
                             strokeMiterlimit="10"
                             x1="508.129"
@@ -114,7 +114,7 @@ export default function NotFound() {
                           <line
                             fill="none"
                             stroke="#0E0620"
-                            stroke-width="3"
+                            strokeWidth="3"
                             strokeLinecap="round"
                             strokeMiterlimit="10"
                             x1="154.55"
@@ -126,7 +126,7 @@ export default function NotFound() {
                           <line
                             fill="none"
                             stroke="#0E0620"
-                            stroke-width="3"
+                            strokeWidth="3"
                             strokeLinecap="round"
                             strokeMiterlimit="10"
                             x1="144.609"
@@ -139,7 +139,7 @@ export default function NotFound() {
                           <line
                             fill="none"
                             stroke="#0E0620"
-                            stroke-width="3"
+                            strokeWidth="3"
                             strokeLinecap="round"
                             strokeMiterlimit="10"
                             x1="320.135"
@@ -151,7 +151,7 @@ export default function NotFound() {
                           <line
                             fill="none"
                             stroke="#0E0620"
-                            stroke-width="3"
+                            strokeWidth="3"
                             strokeLinecap="round"
                             strokeMiterlimit="10"
                             x1="310.194"
@@ -164,7 +164,7 @@ export default function NotFound() {
                           <line
                             fill="none"
                             stroke="#0E0620"
-                            stroke-width="3"
+                            strokeWidth="3"
                             strokeLinecap="round"
                             strokeMiterlimit="10"
                             x1="200.67"
@@ -176,7 +176,7 @@ export default function NotFound() {
                           <line
                             fill="none"
                             stroke="#0E0620"
-                            stroke-width="3"
+                            strokeWidth="3"
                             strokeLinecap="round"
                             strokeMiterlimit="10"
                             x1="210.611"
@@ -191,7 +191,7 @@ export default function NotFound() {
                           <line
                             fill="none"
                             stroke="#0E0620"
-                            stroke-width="3"
+                            strokeWidth="3"
                             strokeLinecap="round"
                             strokeMiterlimit="10"
                             x1="432.173"
@@ -203,7 +203,7 @@ export default function NotFound() {
                           <line
                             fill="none"
                             stroke="#0E0620"
-                            stroke-width="3"
+                            strokeWidth="3"
                             strokeLinecap="round"
                             strokeMiterlimit="10"
                             x1="426.871"
@@ -216,7 +216,7 @@ export default function NotFound() {
                           <line
                             fill="none"
                             stroke="#0E0620"
-                            stroke-width="3"
+                            strokeWidth="3"
                             strokeLinecap="round"
                             strokeMiterlimit="10"
                             x1="489.555"
@@ -228,7 +228,7 @@ export default function NotFound() {
                           <line
                             fill="none"
                             stroke="#0E0620"
-                            stroke-width="3"
+                            strokeWidth="3"
                             strokeLinecap="round"
                             strokeMiterlimit="10"
                             x1="485.636"
@@ -241,7 +241,7 @@ export default function NotFound() {
                           <line
                             fill="none"
                             stroke="#0E0620"
-                            stroke-width="3"
+                            strokeWidth="3"
                             strokeLinecap="round"
                             strokeMiterlimit="10"
                             x1="231.468"
@@ -253,7 +253,7 @@ export default function NotFound() {
                           <line
                             fill="none"
                             stroke="#0E0620"
-                            stroke-width="3"
+                            strokeWidth="3"
                             strokeLinecap="round"
                             strokeMiterlimit="10"
                             x1="227.55"
@@ -266,7 +266,7 @@ export default function NotFound() {
                           <line
                             fill="none"
                             stroke="#0E0620"
-                            stroke-width="3"
+                            strokeWidth="3"
                             strokeLinecap="round"
                             strokeMiterlimit="10"
                             x1="244.032"
@@ -278,7 +278,7 @@ export default function NotFound() {
                           <line
                             fill="none"
                             stroke="#0E0620"
-                            stroke-width="3"
+                            strokeWidth="3"
                             strokeLinecap="round"
                             strokeMiterlimit="10"
                             x1="247.95"
@@ -291,7 +291,7 @@ export default function NotFound() {
                           <line
                             fill="none"
                             stroke="#0E0620"
-                            stroke-width="3"
+                            strokeWidth="3"
                             strokeLinecap="round"
                             strokeMiterlimit="10"
                             x1="186.359"
@@ -303,7 +303,7 @@ export default function NotFound() {
                           <line
                             fill="none"
                             stroke="#0E0620"
-                            stroke-width="3"
+                            strokeWidth="3"
                             strokeLinecap="round"
                             strokeMiterlimit="10"
                             x1="190.277"
@@ -316,7 +316,7 @@ export default function NotFound() {
                           <line
                             fill="none"
                             stroke="#0E0620"
-                            stroke-width="3"
+                            strokeWidth="3"
                             strokeLinecap="round"
                             strokeMiterlimit="10"
                             x1="480.296"
@@ -328,7 +328,7 @@ export default function NotFound() {
                           <line
                             fill="none"
                             stroke="#0E0620"
-                            stroke-width="3"
+                            strokeWidth="3"
                             strokeLinecap="round"
                             strokeMiterlimit="10"
                             x1="484.215"
@@ -342,7 +342,7 @@ export default function NotFound() {
                         <circle
                           fill="none"
                           stroke="#0E0620"
-                          stroke-width="3"
+                          strokeWidth="3"
                           strokeLinecap="round"
                           strokeMiterlimit="10"
                           cx="588.977"
@@ -353,7 +353,7 @@ export default function NotFound() {
                         <circle
                           fill="none"
                           stroke="#0E0620"
-                          stroke-width="3"
+                          strokeWidth="3"
                           strokeLinecap="round"
                           strokeMiterlimit="10"
                           cx="450.066"
@@ -364,7 +364,7 @@ export default function NotFound() {
                         <circle
                           fill="none"
                           stroke="#0E0620"
-                          stroke-width="3"
+                          strokeWidth="3"
                           strokeLinecap="round"
                           strokeMiterlimit="10"
                           cx="168.303"
@@ -375,7 +375,7 @@ export default function NotFound() {
                         <circle
                           fill="none"
                           stroke="#0E0620"
-                          stroke-width="3"
+                          strokeWidth="3"
                           strokeLinecap="round"
                           strokeMiterlimit="10"
                           cx="429.522"
@@ -386,7 +386,7 @@ export default function NotFound() {
                         <circle
                           fill="none"
                           stroke="#0E0620"
-                          stroke-width="3"
+                          strokeWidth="3"
                           strokeLinecap="round"
                           strokeMiterlimit="10"
                           cx="200.67"
@@ -397,7 +397,7 @@ export default function NotFound() {
                         <circle
                           fill="none"
                           stroke="#0E0620"
-                          stroke-width="3"
+                          strokeWidth="3"
                           strokeLinecap="round"
                           strokeMiterlimit="10"
                           cx="133.343"
@@ -408,7 +408,7 @@ export default function NotFound() {
                         <circle
                           fill="none"
                           stroke="#0E0620"
-                          stroke-width="3"
+                          strokeWidth="3"
                           strokeLinecap="round"
                           strokeMiterlimit="10"
                           cx="283.521"
@@ -419,7 +419,7 @@ export default function NotFound() {
                         <circle
                           fill="none"
                           stroke="#0E0620"
-                          stroke-width="3"
+                          strokeWidth="3"
                           strokeLinecap="round"
                           strokeMiterlimit="10"
                           cx="413.618"
@@ -477,7 +477,7 @@ export default function NotFound() {
                         id="cord"
                         fill="none"
                         stroke="#0E0620"
-                        stroke-width="3"
+                        strokeWidth="3"
                         strokeLinecap="round"
                         strokeLinejoin="round"
                         strokeMiterlimit="10"
@@ -490,7 +490,7 @@ export default function NotFound() {
                         id="backpack"
                         fill="#FFFFFF"
                         stroke="#0E0620"
-                        stroke-width="3"
+                        strokeWidth="3"
                         strokeLinecap="round"
                         strokeLinejoin="round"
                         strokeMiterlimit="10"
@@ -503,7 +503,7 @@ export default function NotFound() {
                         <line
                           fill="#FFFFFF"
                           stroke="#0E0620"
-                          stroke-width="3"
+                          strokeWidth="3"
                           strokeLinecap="round"
                           strokeLinejoin="round"
                           strokeMiterlimit="10"
@@ -515,7 +515,7 @@ export default function NotFound() {
                         <circle
                           fill="#FFFFFF"
                           stroke="#0E0620"
-                          stroke-width="3"
+                          strokeWidth="3"
                           strokeLinecap="round"
                           strokeLinejoin="round"
                           strokeMiterlimit="10"
@@ -528,7 +528,7 @@ export default function NotFound() {
                         <path
                           fill="#FFFFFF"
                           stroke="#0E0620"
-                          stroke-width="3"
+                          strokeWidth="3"
                           strokeLinecap="round"
                           strokeLinejoin="round"
                           strokeMiterlimit="10"
@@ -540,7 +540,7 @@ export default function NotFound() {
                         <path
                           fill="#FFFFFF"
                           stroke="#0E0620"
-                          stroke-width="3"
+                          strokeWidth="3"
                           strokeLinecap="round"
                           strokeLinejoin="round"
                           strokeMiterlimit="10"
@@ -554,7 +554,7 @@ export default function NotFound() {
                         <path
                           fill="#FFFFFF"
                           stroke="#0E0620"
-                          stroke-width="3"
+                          strokeWidth="3"
                           strokeLinecap="round"
                           strokeLinejoin="round"
                           strokeMiterlimit="10"
@@ -566,7 +566,7 @@ export default function NotFound() {
                         <path
                           fill="#FFFFFF"
                           stroke="#0E0620"
-                          stroke-width="3"
+                          strokeWidth="3"
                           strokeLinecap="round"
                           strokeLinejoin="round"
                           strokeMiterlimit="10"
@@ -580,7 +580,7 @@ export default function NotFound() {
                         <path
                           fill="#FFFFFF"
                           stroke="#0E0620"
-                          stroke-width="3"
+                          strokeWidth="3"
                           strokeLinecap="round"
                           strokeLinejoin="round"
                           strokeMiterlimit="10"
@@ -592,7 +592,7 @@ export default function NotFound() {
                         <path
                           fill="none"
                           stroke="#0E0620"
-                          stroke-width="3"
+                          strokeWidth="3"
                           strokeLinecap="round"
                           strokeLinejoin="round"
                           strokeMiterlimit="10"
@@ -605,7 +605,7 @@ export default function NotFound() {
                           <path
                             fill="#FFFFFF"
                             stroke="#0E0620"
-                            stroke-width="3"
+                            strokeWidth="3"
                             strokeLinecap="round"
                             strokeLinejoin="round"
                             strokeMiterlimit="10"
@@ -617,7 +617,7 @@ export default function NotFound() {
                           <line
                             fill="none"
                             stroke="#0E0620"
-                            stroke-width="3"
+                            strokeWidth="3"
                             strokeLinecap="round"
                             strokeLinejoin="round"
                             strokeMiterlimit="10"
@@ -631,7 +631,7 @@ export default function NotFound() {
                           <path
                             fill="#FFFFFF"
                             stroke="#0E0620"
-                            stroke-width="3"
+                            strokeWidth="3"
                             strokeLinecap="round"
                             strokeLinejoin="round"
                             strokeMiterlimit="10"
@@ -643,7 +643,7 @@ export default function NotFound() {
                           <line
                             fill="none"
                             stroke="#0E0620"
-                            stroke-width="3"
+                            strokeWidth="3"
                             strokeLinecap="round"
                             strokeLinejoin="round"
                             strokeMiterlimit="10"
@@ -659,7 +659,7 @@ export default function NotFound() {
                           transform="matrix(0.259 -0.9659 0.9659 0.259 -51.5445 563.2371)"
                           fill="#FFFFFF"
                           stroke="#0E0620"
-                          stroke-width="3"
+                          strokeWidth="3"
                           strokeLinecap="round"
                           strokeLinejoin="round"
                           strokeMiterlimit="10"
@@ -672,7 +672,7 @@ export default function NotFound() {
                           id="headStripe"
                           fill="none"
                           stroke="#0E0620"
-                          stroke-width="3"
+                          strokeWidth="3"
                           strokeLinecap="round"
                           strokeLinejoin="round"
                           strokeMiterlimit="10"
@@ -683,7 +683,7 @@ export default function NotFound() {
                         <path
                           fill="#FFFFFF"
                           stroke="#0E0620"
-                          stroke-width="3"
+                          strokeWidth="3"
                           strokeLinecap="round"
                           strokeLinejoin="round"
                           strokeMiterlimit="10"
@@ -697,7 +697,7 @@ export default function NotFound() {
                             id="glassShine"
                             fill="none"
                             stroke="#0E0620"
-                            stroke-width="3"
+                            strokeWidth="3"
                             strokeMiterlimit="10"
                             points="
 					278.436,375.599 383.003,264.076 364.393,251.618 264.807,364.928 				"
