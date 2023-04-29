@@ -49,11 +49,6 @@ export default function Home(): JSX.Element {
           );
         })}
       </main>
-      <footer className="m-4 dark:bg-gray-800 ">
-        <div className="w-full mx-auto max-w-screen-xl p-4 flex items-center justify-center ">
-          By Ewelina - 2023
-        </div>
-      </footer>
     </>
   );
 }
