@@ -26,19 +26,11 @@ export default function Home(): JSX.Element {
   ];
   return (
     <>
-      <main className="flex min-h-screen flex-col items-center justify-center p-24">
-        <div>
-          <div className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-4 pt-6 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit ">
-            <h1 className="mt-3 mb-3 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white text-center">
-              News
-            </h1>
-          </div>
-        </div>
-
+      <main className="flex min-h-screen flex-col items-center justify-center p-24 mt-6">
         {links.map((link) => {
           return (
             <Link key={link.path} href={`/news${link.path}`}>
-              <div className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 text-center">
+              <div className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-400 hover:dark:bg-neutral-400/30 text-center">
                 <strong>{link.title}</strong>{" "}
                 <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
                   -&gt;

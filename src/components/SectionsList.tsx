@@ -9,9 +9,12 @@ export default function SectionsList({ resource }: Props): JSX.Element {
   const onClickHandler = (section: string): void => {
     router.push(`/news/sections/${section}`);
   };
+  if (!resource) {
+    return <>Loading...</>;
+  }
   return (
     <>
-      <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mx-20">
         {resource.map((result: Section) => {
           if (
             result.section === "admin" ||

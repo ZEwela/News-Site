@@ -15,6 +15,9 @@ type SectionsProps = {
 };
 
 export default function Sections({ results, title }: SectionsProps) {
+  if (results.length === 0) {
+    return <div>Loading...</div>;
+  }
   return (
     <LayoutWithMenu>
       <Head>
@@ -22,7 +25,7 @@ export default function Sections({ results, title }: SectionsProps) {
         <meta name="description" content={title} />
       </Head>
 
-      <h1 className="mt-4 mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white text-center">
+      <h1 className="mt-4 mb-4 text-4xl font-bold leading-none tracking-tight text-gray-800 md:text-5xl lg:text-5xl dark:text-white text-center">
         {title}
       </h1>
       <SectionsList resource={results} />
